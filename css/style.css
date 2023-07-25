@@ -1,0 +1,45 @@
+.siteHeader {
+    text-align: center;
+    background-color: #8f8f8f;
+    transition-duration: 100ms;
+}
+
+body {
+    margin: 0;
+    background-color: #EBEBEB;
+    transition-duration: 100ms;
+}
+
+.siteTitle {
+    margin: 0;
+    padding: 10px;
+}
+
+.themeButton {
+    margin-bottom: 15px;
+}
+
+.contentSection {
+    text-align: center;
+}
+
+.sectionTitle {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.main {
+    margin: auto;
+}
+
+.darkSiteHeader {
+    color: #D6D6D6;
+    background-color: #202020;
+    transition-duration: 100ms;
+}
+
+.darkSite {
+    color: #EBEBEB;
+    background-color: #3f3f3f;
+    transition-duration: 100ms;
+}
