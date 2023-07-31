@@ -1,18 +1,35 @@
-console.log("Hello World!");
-
-const themeButton = document.querySelector(".js-button")
-themeButton.addEventListener("click", () => {
-
+{
     const body = document.querySelector(".js-body");
-    const siteHeader = document.querySelector(".js-header");
+    const button = document.querySelector(".js-button");
 
-    body.classList.toggle("body--alternate");
-    siteHeader.classList.toggle("header--alternate");
+    const init = () => {
 
-    if (body.classList.contains("body--alternate")) {
-        themeButton.innerText = "Zmień na jasny motyw";
-    } else {
-        themeButton.innerText = "Zmień na ciemny motyw";
+        welcome();
+
+        button.addEventListener("click", onChangeThemeClick);
+
     }
 
-})
+    const welcome = () => console.log("Hello World!");
+
+    const onChangeThemeClick = () => {
+        changeTheme();
+        changeButtonText();
+    }
+
+    const changeTheme = () => {
+        const siteHeader = document.querySelector(".js-header");
+        body.classList.toggle("body--alternate");
+        siteHeader.classList.toggle("header--alternate");
+    }
+
+    const changeButtonText = () => {
+        if (body.classList.contains("body--alternate")) {
+            button.innerText = "Zmień na jasny motyw";
+        } else {
+            button.innerText = "Zmień na ciemny motyw";
+        }
+    }
+
+    init();
+}
