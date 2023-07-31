@@ -1,10 +1,20 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
 .siteHeader {
     text-align: center;
     background-color: #8f8f8f;
     transition-duration: 100ms;
 }
 
-body {
+.body {
     margin: 0;
     background-color: #EBEBEB;
     transition-duration: 100ms;
