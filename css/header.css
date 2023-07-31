@@ -1,0 +1,21 @@
+.header {
+    text-align: center;
+    background-color: #8f8f8f;
+    transition-duration: 100ms;
+}
+
+.header__title {
+    margin: 0;
+    padding: 10px;
+}
+
+.header--alternate {
+    color: #D6D6D6;
+    background-color: #202020;
+    transition-duration: 100ms;
+}
+
+.header__button {
+    margin-bottom: 15px;
+}
+

@@ -1,15 +1,15 @@
 console.log("Hello World!");
 
-let themeButton = document.querySelector(".themeButton")
+const themeButton = document.querySelector(".js-button")
 themeButton.addEventListener("click", () => {
 
-    let body = document.querySelector("body");
-    let siteHeader = document.querySelector(".siteHeader");
+    const body = document.querySelector(".js-body");
+    const siteHeader = document.querySelector(".js-header");
 
-    body.classList.toggle("darkSite");
-    siteHeader.classList.toggle("darkSiteHeader");
+    body.classList.toggle("body--alternate");
+    siteHeader.classList.toggle("header--alternate");
 
-    if (body.classList.contains("darkSite")) {
+    if (body.classList.contains("body--alternate")) {
         themeButton.innerText = "Zmień na jasny motyw";
     } else {
         themeButton.innerText = "Zmień na ciemny motyw";
